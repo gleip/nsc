@@ -1,0 +1,29 @@
+{
+  "name": "maths",
+  "description": "Сервис математических операций",
+  "methods": [{
+    "name": "sum",
+    "description": "Сложение двух чисел",
+    "request": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "type": "number"
+        },
+        "b": {
+          "type": "number"
+        }
+      },
+      "required": ["a", "b"]
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "number"
+        }
+      },
+      "required": ["result"]
+    }
+  }]
+}
